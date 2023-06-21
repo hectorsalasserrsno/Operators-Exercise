@@ -5,12 +5,13 @@ namespace OperatorExercise
 {
     public class Program
     {
+           
         static void Main(string[] args)
         {
             
             
             
-            int a = 17;
+            int a = 17;  //excercise 1
             int b = 4;
             int quotuent = a / b;
             int remainder = a % b;
@@ -27,8 +28,23 @@ namespace OperatorExercise
                 Console.WriteLine("17/4 is " + quotuent);
                 Console.WriteLine("reminder " + remainder);
             }
+
+
+            Console.WriteLine("What is the radius of your circle?");
+            double input = double.Parse(Console.ReadLine());
+            var answer = AreaOfCircle(20);
+            Console.WriteLine(answer);
             
             
+
         }
+        
+        
+        public static double AreaOfCircle(double radius)
+        {
+            return Math.PI * Math.PI * radius * radius;
+  
+        }
+
     }
 }
