@@ -30,9 +30,11 @@ namespace OperatorExercise
             }
 
 
+            
+            
             Console.WriteLine("What is the radius of your circle?");
             double input = double.Parse(Console.ReadLine());
-            var answer = AreaOfCircle(20);
+            var answer = Math.PI * Math.Pow(input, 2);
             Console.WriteLine(answer);
             
             
